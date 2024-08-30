@@ -48,13 +48,13 @@
     post {
         success {
             echo 'Pipeline succeeded!'
-            mail to: 's224597443@deakin.edu.au',
+            mail to: 'akmcanda@gmail.com',
                  subject: "Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "Good news! The build was successful.\nCheck console output at ${env.BUILD_URL}."
         }
         failure {
             echo 'Pipeline failed!'
-            mail to: 's224597443@deakin.edu.au',
+            mail to: 'akmcanda@gmail.com',
                  subject: "Build Failure: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "Unfortunately, the build has failed.\nCheck console output at ${env.BUILD_URL}."
         }
