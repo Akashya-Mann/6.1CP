@@ -5,43 +5,43 @@
         stage('Build') {
             steps {
                 echo 'Building the code...'
-                // Add build automation tool here (e.g., Maven)
+                // Replace this comment with your build commands (e.g., compile code, package artifacts)
             }
         }
         stage('Unit and Integration Tests') {
             steps {
                 echo 'Running unit and integration tests...'
-                // Specify test automation tools here
+                // Replace this comment with your test commands (e.g., run unit tests)
             }
         }
         stage('Code Analysis') {
             steps {
                 echo 'Analyzing the code...'
-                // Specify code analysis tool here
+                // Replace this comment with your code analysis commands (e.g., run a linter)
             }
         }
         stage('Security Scan') {
             steps {
                 echo 'Performing security scan...'
-                // Specify security scan tool here
+                // Replace this comment with your security scan commands
             }
         }
         stage('Deploy to Staging') {
             steps {
                 echo 'Deploying to staging server...'
-                // Specify staging deployment steps here
+                // Replace this comment with your staging deployment commands
             }
         }
         stage('Integration Tests on Staging') {
             steps {
                 echo 'Running integration tests on staging...'
-                // Specify integration tests steps here
+                // Replace this comment with your integration test commands
             }
         }
         stage('Deploy to Production') {
             steps {
                 echo 'Deploying to production server...'
-                // Specify production deployment steps here
+                // Replace this comment with your production deployment commands
             }
         }
     }
