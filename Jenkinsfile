@@ -47,10 +47,16 @@
     }
     post {
         success {
-            // Notify success via email
+            echo 'Pipeline succeeded!'
+            mail to: 's224597443@deakin.edu.au',
+                 subject: "Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "Good news! The build was successful.\nCheck console output at ${env.BUILD_URL}."
         }
         failure {
-            // Notify failure via email
+            echo 'Pipeline failed!'
+            mail to: 's224597443@deakin.edu.au',
+                 subject: "Build Failure: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "Unfortunately, the build has failed.\nCheck console output at ${env.BUILD_URL}."
         }
     }
 }
